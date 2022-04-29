@@ -97,6 +97,13 @@ body .main .desktop .menu-expanded {
           flex-direction: column;
 }
 
+body .main .desktop .menu-expanded svg {
+  width: 18px;
+  fill: rgba(255, 255, 255, 0.725);
+  margin-right: 10px;
+  height: 80%;
+}
+
 body .main .desktop .menu-expanded span {
   margin: 0px;
   width: 100%;
@@ -110,12 +117,6 @@ body .main .desktop .menu-expanded span:hover {
 body .main .desktop .menu-expanded hr {
   width: 100%;
   border-color: rgba(255, 255, 255, 0.3);
-}
-
-body .main .desktop .menu-expanded svg {
-  width: 18px;
-  fill: rgba(255, 255, 255, 0.725);
-  margin-right: 10px;
 }
 
 .active {
