@@ -45,17 +45,27 @@ body .main .topbar span:hover {
   color: white;
 }
 
-body .main .desktop .notif-panel {
-  opacity: 0;
+body .main .topbar .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .main .topbar .menu:hover .icon {
+  fill: white;
+}
+
+body .main .topbar .menu .icon {
+  width: 15px;
+  fill: rgba(255, 255, 255, 0.725);
+  margin-right: 10px;
+}
+
+body .main .desktop .panel {
+  opacity: 1;
   position: absolute;
-  top: 25px;
-  right: 50%;
-  -webkit-transform: translate(50%, 0%);
-          transform: translate(50%, 0%);
   background-color: #2d2d2d;
   margin: 6px;
-  width: 40%;
-  height: 500px;
   -webkit-box-shadow: 0px 3px 8px 6px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 3px 8px 6px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
@@ -63,7 +73,53 @@ body .main .desktop .notif-panel {
   transition: 200ms opacity;
 }
 
+body .main .desktop .notif {
+  top: 25px;
+  right: 50%;
+  -webkit-transform: translate(50%, 0%);
+          transform: translate(50%, 0%);
+  margin: 6px;
+  width: 40%;
+  height: 500px;
+}
+
+body .main .desktop .menu-expanded {
+  top: 25px;
+  right: 0%;
+  width: 300px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .main .desktop .menu-expanded span {
+  margin: 0px;
+  width: 100%;
+  padding: 3px 5px;
+}
+
+body .main .desktop .menu-expanded span:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+body .main .desktop .menu-expanded hr {
+  width: 100%;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+body .main .desktop .menu-expanded svg {
+  width: 18px;
+  fill: rgba(255, 255, 255, 0.725);
+  margin-right: 10px;
+}
+
 .active {
   border-bottom: 2px solid white;
+  margin-bottom: 0px;
 }
 /*# sourceMappingURL=style.css.map */

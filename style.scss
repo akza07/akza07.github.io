@@ -29,22 +29,62 @@ body{
                     color:white;
                 }
             }
+            .menu {
+                display: flex;
+                &:hover .icon{
+                    fill:white;
+                }
+                .icon {
+                    width: 15px;
+                    fill:rgba(255, 255, 255, 0.725);
+                    margin-right: 10px;
+                }
+            }
         }
         .desktop {
-            .notif-panel {
-                // display:none;
-                opacity:0;
+            .panel {
+                opacity:1;
                 position: absolute;
-                top:25px;
-                right:50%;
-                transform: translate(50%,0%);
                 background-color: #2d2d2d;
                 margin: 6px;
-                width: 40%;
-                height: 500px;
                 box-shadow: 0px 3px 8px 6px rgba(0,0,0,0.5);
                 border-radius: 10px;
                 transition: 200ms opacity;
+            }
+            .notif {
+                // display:none;
+                top:25px;
+                right:50%;
+                transform: translate(50%,0%);
+                margin: 6px;
+                width: 40%;
+                height: 500px;
+            }
+            .menu-expanded {
+                top: 25px;
+                right: 0%;
+                width: 300px;
+                height: 400px;
+                // padding: 20px 30px;
+                display: flex;
+                flex-direction: column;
+                span {
+                    margin: 0px;
+                    width: 100%;
+                    padding: 3px 5px;
+                    &:hover {
+                        background-color:rgba(255, 255, 255, 0.2);
+                    }
+                }
+                hr {
+                    width: 100%;
+                    border-color: rgba(255, 255, 255, 0.3);
+                }
+                svg {
+                    width: 18px;
+                    fill:rgba(255, 255, 255, 0.725);
+                    margin-right: 10px;
+                }
             }
         }
     }
@@ -52,4 +92,5 @@ body{
 
 .active {
     border-bottom: 2px solid white;
+    margin-bottom: 0px;
 }
