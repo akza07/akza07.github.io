@@ -119,4 +119,3 @@
     </div>
   </div>
 </div>
-<aside class="sticky">asd</aside>
