@@ -34,8 +34,6 @@
     <div class=" prose min-w-3/5 dark:prose-invert">
       <div class="space-y-4 text-center">
         <h1 class="font-mono text-6xl font-bold tracking-widest text-slate-100">akza07</h1>
-        <!-- <p class="text-lg text-slate-400">(Akhilesh H)</p> -->
-        <!-- The desire to remain private is conflicting with the need of requiring exposure -->
         <p class="mx-auto max-w-xl text-xl text-slate-300">
           Backend-focused engineer who builds fast APIs, distributed workers, and queue-driven
           systems.
