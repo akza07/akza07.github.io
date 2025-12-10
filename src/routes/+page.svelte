@@ -2,9 +2,8 @@
   let modalElement: HTMLDialogElement;
   $effect(() => {
     const tosAccepted = localStorage.getItem('tos_accepted');
-    if (tosAccepted !== 'yes') {
-      modalElement.showModal();
-    }
+    if (tosAccepted !== 'yes') modalElement.showModal();
+    else modalElement.classList.add('hidden');
   });
 
   function closeModal() {
