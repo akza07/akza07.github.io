@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+/* Light mode default */
+body {
+  @apply bg-white text-black min-h-screen;
+}
+
+/* Dark mode using media query */
+@media (prefers-color-scheme: dark) {
+  body {
+    @apply bg-slate-900 text-white;
+  }
+}
