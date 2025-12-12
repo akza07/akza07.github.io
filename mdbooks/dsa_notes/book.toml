@@ -1,0 +1,7 @@
+[book]
+title = "Data Structures & Algorithms"
+authors = ["akzaisme"]
+language = "en"
+
+[output.html]
+site-url = "/notes/"
