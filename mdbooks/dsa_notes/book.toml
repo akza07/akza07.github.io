@@ -1,7 +1,16 @@
 [book]
-title = "Data Structures & Algorithms"
+title = "My DSA Notes"
 authors = ["akzaisme"]
 language = "en"
 
 [output.html]
 site-url = "/notes/"
+mathjax-support = true
+additional-js = ["mermaid.min.js", "mermaid-init.js"]
+
+[preprocessor]
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
+
+

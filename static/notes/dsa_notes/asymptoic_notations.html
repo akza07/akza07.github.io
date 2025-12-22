@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Introduction - My DSA Notes</title>
+        <title>Asymtopic Notations - My DSA Notes</title>
 
 
         <!-- Custom HTML head -->
@@ -176,33 +176,39 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
+                        <h1 id="asymptotic-analysis"><a class="header" href="#asymptotic-analysis">Asymptotic Analysis</a></h1>
+<p>Asymptotic notations are mathematical tools used in Computer Science to describe how the
+size of input \(N\) changes the running time or space usage of the application.</p>
+<h2 id="types-of-complexity-analysis"><a class="header" href="#types-of-complexity-analysis">Types of Complexity Analysis</a></h2>
+<ol>
+<li>Time Complexity – How the size of input \(N\) affects the runtime of the program. It’s
+usually indicated or algorithm.</li>
+<li>Space Complexity – How much space does the algorithm needs and how it behaves as the input
+size grows.</li>
+</ol>
 <hr>
-<h2 id="what-and-why"><a class="header" href="#what-and-why">What and Why?</a></h2>
-<p>Welcome to my Data Structure and Algorithm reference.</p>
-<p>This book is a curated collection of concepts, patterns, implementation of problem-solving
-techniques that I have learned during college curriculam and also as part of my interview preps and
-revisions.</p>
-<p>I’ll explain the concepts as much as I can while ensuring it’s not too verbose.</p>
-<p>And I’m trying to get good at note taking using markdown languages.</p>
-<hr>
-<h2 id="why-so-minimal"><a class="header" href="#why-so-minimal">Why so minimal?</a></h2>
-<p>I always keep my notes minimal because I’m lazy I guess. The book only has bare essentials as this
-is not a textbook. So do not use this as a learning material but only as a revision material.</p>
-<p>This is a digital notebook which don’t repeat same examples and stories too much so as to avoid
-the following.</p>
-<ul>
-<li>Spoon feeding brain and I stop thinking or give an effort to understanding it.</li>
-<li>Re-iterating same basic things when all I want is to have a quick glance as a reminder of a
-concept.</li>
-</ul>
+<h2 id="asymptotic-notations"><a class="header" href="#asymptotic-notations">Asymptotic Notations</a></h2>
+<h3 id="big-o-notation-big-o"><a class="header" href="#big-o-notation-big-o">Big O Notation (Big \(O\))</a></h3>
+<p>Worse-case scenario – The maximum or upper limit of the resource the algorithm will need.
+The worst case of estimation of Linear Search algorithm is \(O(n\)) since if we look into a list
+of series from left to right. If the element is on the extreme right end of the list, then the
+algorithm will need to exhaust all the list elements ie; \(N\) to find it.</p>
+<h3 id="big-omega-notation-big-omega"><a class="header" href="#big-omega-notation-big-omega">Big Omega Notation (Big \(\Omega\))</a></h3>
+<p>Best-case scenario – The minimum or lower limit of the resource the algorithm will need.
+The best case estimation of Liniear search is if the element we are searching for is at the first
+place of the list. And thus for Linear search, it is \(\Omega(n)\)</p>
+<h3 id="big-theta-notation-big-theta"><a class="header" href="#big-theta-notation-big-theta">Big Theta Notation (Big \(\Theta\))</a></h3>
+<p>I don’t know…</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
 
-                            <a rel="next prefetch" href="asymptoic_notations.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="data_structures/introduction.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -212,8 +218,11 @@ concept.</li>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
 
-                    <a rel="next prefetch" href="asymptoic_notations.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="data_structures/introduction.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>

@@ -45,7 +45,7 @@
       <header>
         <div class="space-y-4 text-center">
           <h1 class="font-mono text-6xl font-bold tracking-widest dark:text-slate-100">
-            Portfolio - akza07
+            akza07
           </h1>
           <p class="mx-auto max-w-xl text-xl dark:text-slate-300">
             Backend-focused engineer who builds fast APIs, distributed workers, and queue-driven
