@@ -1,16 +1,213 @@
 ---
-
+import "../styles/global.css";
+const content = [
+	{
+		title: "Background",
+		joinWith: ": ",
+		items: [
+			{
+				title: "Education",
+				description: "B-Tech Computer Science.",
+				isAnchor: false,
+			},
+			{
+				title: "Work Experience",
+				description: "4+ years as Software Engineer.",
+				isAnchor: false,
+			},
+			{
+				title: "Specialization",
+				description: "Backend Engineering & Development.",
+				isAnchor: false,
+			},
+			{
+				title: "More...",
+				description: null,
+				isAnchor: true,
+			},
+		],
+	},
+	{
+		title: "Languages & Stacks",
+		joinWith: ": ",
+		items: [
+			{
+				title: "Languages",
+				description: "TypeScript,JavaScript, Python, Go",
+				isAnchor: false,
+			},
+			{
+				title: "Backend Frameworks",
+				description: "NestJS, Django REST Framework",
+				isAnchor: false,
+			},
+			{
+				title: "Frontend Bits",
+				description: "Svelte, React, HTML, CSS",
+				isAnchor: false,
+			},
+			{
+				title: "Databases",
+				description: "PostgreSQL, SQL in general, MongoDB",
+				isAnchor: false,
+			},
+			{
+				title: "Queues / Workers",
+				description: "Redis, RabbitMQ, SQS, BullMQ, Huey",
+				isAnchor: false,
+			},
+			{
+				title: "Infra Bits",
+				description: "Linux, Docker, Podman",
+				isAnchor: false,
+			},
+			{
+				title: "Version Management",
+				description: "Git, GitLab, GitHub",
+				isAnchor: false,
+			},
+		],
+	},
+	{
+		title: "3rd Party Integrations & Services",
+		joinWith: " — ",
+		notes: "If it involves webhooks, signatures, async events, or weird third-party quirks, I’ve probably debugged it.",
+		items: [
+			{
+				title: "iOS Subscriptions",
+				description:
+					"App Store Server Notifications (V2), receipt validation.",
+				isAnchor: false,
+			},
+			{
+				title: "Stripe",
+				description:
+					"subscription flows, billing automation, webhook handling, Stripe connect payouts.",
+				isAnchor: false,
+			},
+			{
+				title: "PayPal & Venmo",
+				description: "automated payouts, ledgers, webhook/status sync.",
+				isAnchor: false,
+			},
+			{
+				title: "Tango Card",
+				description: "digital reward fulfillment automation.",
+				isAnchor: false,
+			},
+			{
+				title: "Firebase",
+				description: "Cloud Messaging, Realtime Database, Firestore",
+				isAnchor: false,
+			},
+			{
+				title: "Twilio & Sendgrid",
+				description:
+					"Sending SMS & E-mails and tracking them using webhooks",
+				isAnchor: false,
+			},
+			{
+				title: "AWS",
+				description:
+					"S3, SQS, Lambda, Event Bridges, SES and more. Infrastructure deployments with AWS CDK.",
+				isAnchor: false,
+			},
+		],
+	},
+	{
+		title: "Hands-on Experiences",
+		joinWith: " ",
+		notes: "APIs, real-time services, distributed workers, internal tools, automation scripts, and systems designed to so that they remain easier to maintain and scalable when needed.",
+		items: [
+			{
+				title: "Authentication",
+				description: "with JWT with token rotation, OAuth2 etc.",
+				isAnchor: false,
+			},
+			{
+				title: "Microservices",
+				description: "for high-volume event processing with RabbitMQ",
+				isAnchor: false,
+			},
+			{
+				title: "Subscription and Payment automation",
+				description: "pipelines.",
+				isAnchor: false,
+			},
+			{
+				title: "Async workers",
+				description:
+					"for heavy tasks, reporting, cleanup, and third-party sync",
+				isAnchor: false,
+			},
+			{
+				title: "Internal Tooling",
+				description:
+					"for dev workflows, debugging, mass-migration and admin operations",
+				isAnchor: false,
+			},
+			{
+				title: "Webhook-driven Systems",
+				description: "with retries, DLQs, and signature verification",
+				isAnchor: false,
+			},
+			{
+				title: "AWS",
+				description:
+					"S3, SQS, Lambda, Event Bridges, SES and more. Infrastructure deployments with AWS CDK.",
+				isAnchor: false,
+			},
+		],
+	},
+];
 ---
 
+<!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home | akza07</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<header>
+			<div>
+				<h1>
+					<span style="color: var(--secondary-text);" class="blink"
+						>@</span
+					>akza07
+				</h1>
+			</div>
+		</header>
+		<main>
+			<section>
+				Backend-focused engineer who builds fast APIs, distributed
+				workers, and queue-driven systems.
+			</section>
+			<hr />
+			{
+				content.map((section) => (
+					<section>
+						<h2>{section.title}</h2>
+						<ul>
+							{section.items.map((item) => (
+								<li>
+									<span style="font-weight: bold;">
+										{item.description
+											? item.title + section.joinWith
+											: item.title}
+									</span>
+									<span style="color: var(--secondary-text);">
+										{item.description}
+									</span>
+								</li>
+							))}
+						</ul>
+						{section.notes}
+						<hr />
+					</section>
+				))
+			}
+		</main>
 	</body>
 </html>
